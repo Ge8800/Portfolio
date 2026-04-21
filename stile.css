@@ -1,10 +1,133 @@
 *{
     margin:0;
     padding:0;
+    font-family: 'Arial', sans-serif;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+}
+
+/*Nome e cognome*/
+section.title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    
+}
+h2.nome{
+    font-size: 30px;
+    color: #333;
+}
+h2.cognome{
+    font-size: 30px;
+    color: #ADA6EF;
+    margin-left: 10px;
+}
+
+/*Menu*/
+section.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+section ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right:40px; ;
+}
+section ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+section ul li a:hover{
+    color: #ADA6EF;
+}
+
+/*Hero*/
+.hero{
+    padding-left: 100px;
+    padding-top:100px;
+    padding-bottom: 100px;
+    background-color: black;
+    
+}
+
+.hello{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #8880ed;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color:  #8880ed;
+    margin-top: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+/*bottoni*/
+.btn {
+    display:inline-block;
+    margin-top: 20px;
+    
+}
+
+.btn-1{
+   
+    padding: 10px 20px;
+    background-color: #877EE1;
+    border-radius: 20px;
+    border: 2px solid #877EE1;
+}
+.btn-2{
+    width:180px;
+    padding: 10px 10px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    margin-left: 30px;
+}
+
+.btn-1 a, .btn-2 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/*bottoni animazione*/
+.btn-1:hover{
+    background-color: #ADA6EF;
+    border: 2px solid #ADA6EF;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.btn-2:hover{
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #877EE1;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+.btn-2 a:hover{
+    color: #877EE1;
 }
