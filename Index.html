@@ -10,15 +10,25 @@
 
 <body>
 
+<!-- ========================= -->
 <!-- HEADER -->
+<!-- ========================= -->
 <header>
 
+    <!-- Nome e cognome -->
     <section class="title">
         <h2 class="nome">Rossana</h2>
         <h2 class="cognome">Arnaboldi</h2>
     </section>
 
-    <section class="menu">
+    <!-- ICONA HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <!-- MENU -->
+    <nav class="menu" id="menu">
+        <div class="close" onclick="toggleMenu()">✕</div>
         <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">Chi sono</a></li>
@@ -27,11 +37,13 @@
             <li><a href="#esperienza">Esperienza</a></li>
             <li><a href="#contatti">Contatti</a></li>
         </ul>
-    </section>
+    </nav>
 
 </header>
 
+<!-- ========================= -->
 <!-- HERO -->
+<!-- ========================= -->
 <div class="hero" id="hero">
 
     <p class="hello">CIAO, SONO</p>
@@ -42,22 +54,23 @@
         Creo siti web moderni, responsive e funzionali con particolare attenzione all'esperienza utente.
     </p>
 
-    <!-- BOTTONI (NON MODIFICATI COME CHIESTO) -->
     <div class="btn">
-        <a href=""><button class="btn-1">Scopri i miei progetti</button></a>
+        <a href="#progetti"><button class="btn-1">Scopri i miei progetti</button></a>
     </div>
 
     <div class="btn">
-        <a href=""><button class="btn-2">Contattami</button></a>
+        <a href="#contatti"><button class="btn-2">Contattami</button></a>
     </div>
 
 </div>
 
+<!-- ========================= -->
 <!-- ABOUT -->
+<!-- ========================= -->
 <div class="about" id="about">
 
     <div class="immagine">
-        <img src="Immagini/roxy portfolio copia.png" alt="Foto di Rossana Arnaboldi">
+        <img src="Immagini/foto_about.png" alt="Foto di Rossana Arnaboldi">
     </div>
 
     <div class="testo">
@@ -80,7 +93,9 @@
 
 </div>
 
+<!-- ========================= -->
 <!-- PROGETTI -->
+<!-- ========================= -->
 <div class="progetti" id="progetti">
 
     <p class="hello">PROGETTI</p>
@@ -89,158 +104,188 @@
 
     <div class="projects">
 
-        <!-- CARD 1 -->
         <div class="project">
-
-            <img src="Immagini/Estetista.png" alt="Progetto 1">
-
+            <img src="Immagini/estetista_progetto.png" alt="Progetto 1">
             <h3>Sito vetrina</h3>
-
-            <p>
-                Sito vetrina per negozio fittizio di estetica realizzato con WordPress.
-                Design pulito e navigazione intuitiva.
-            </p>
+            <p>Sito vetrina per negozio fittizio di estetica realizzato con WordPress.</p>
 
             <div class="row">
-
                 <div class="programmi">
                     <button class="programma">WordPress</button>
                     <button class="programma">Elementor</button>
                 </div>
-
-                <a href="pagina.html" class="arrow-only">→</a>
-
+                <a href="https://rossanaarnaboldi.altervista.org" class="arrow-only" target="_blank">→</a>
             </div>
-
         </div>
 
-        <!-- CARD 2 -->
         <div class="project">
-
-            <img src="Immagini/Roxyshop.png" alt="Progetto 2">
-
+            <img src="Immagini/Roxyshop_progetto.png" alt="Progetto 2">
             <h3>E-commerce</h3>
-
-            <p>
-                E-commerce fittizio realizzato con WordPress per simulare la vendita online di prodotti.
-            </p>
+            <p>E-commerce fittizio realizzato con WordPress.</p>
 
             <div class="row">
-
                 <div class="programmi">
                     <button class="programma">WordPress</button>
-                    <button class="programma">Elementor</button>
                     <button class="programma">WooCommerce</button>
                 </div>
-
-                <a href="pagina.html" class="arrow-only">→</a>
-
+                <a href="https://roxyshop.altervista.org" class="arrow-only" target="_blank">→</a>
             </div>
-
         </div>
 
-        <!-- CARD 3 -->
         <div class="project">
-
-            <img src="Immagini/Estetista.png" alt="Progetto 3">
-
+            <img src="Immagini/portfolio_progetto.png" alt="Progetto 3">
             <h3>Portfolio personale</h3>
-
-            <p>
-                Portfolio sviluppato in HTML e CSS per presentare competenze e progetti.
-            </p>
+            <p>Portfolio sviluppato in HTML e CSS.</p>
 
             <div class="row">
-
                 <div class="programmi">
                     <button class="programma">HTML</button>
                     <button class="programma">CSS</button>
                 </div>
-
                 <a href="pagina.html" class="arrow-only">→</a>
-
             </div>
-
         </div>
 
     </div>
-
 </div>
 
+<!-- ========================= -->
 <!-- COMPETENZE -->
-<div class="competenze" id="competenze">    
-     <p class="hello">COMPETENZE</p>
+<!-- ========================= -->
+<div class="competenze" id="competenze">
+
+    <p class="hello">COMPETENZE</p>
     <h2>Competenze</h2>
     <hr>
-<!-- Contenitore generale competenze -->
-   <div class="skills">
 
-    <!-- Divisione competenze per categorie -->
-     <div class="skill-category">
-        <h3>Linguaggi</h3>
-        <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/html-5-svgrepo-com.svg" alt="html icona ">
-            <p>HTML</p>
+    <div class="skills">
+
+        <div class="skill-category">
+            <h3>Linguaggi</h3>
         </div>
 
-        <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/css-svgrepo-com.svg" alt="css icona ">
-            <p>CSS</p>
+        <div class="skill-category">
+            <h3>Framework</h3>
         </div>
 
-         <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/php-svgrepo-com.svg" alt="php icona ">
-            <p>PHP</p>
+        <div class="skill-category">
+            <h3>CMS</h3>
         </div>
-   </div>
 
-    <div class="skill-category">
-        <h3>Framework</h3>
-        <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/laravel-svgrepo-com.svg" alt="html icona ">
-            <p>LARAVEL</p>
+        <div class="skill-category">
+            <h3>Software</h3>
         </div>
-    </div>
 
-         <div class="skill-category">
-        <h3>CMS</h3>
-        <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/wordpress-svgrepo-com.svg" alt="html icona ">
-            <p>WordPress</p>
+        <div class="skill-category">
+            <h3>Builder</h3>
         </div>
-    </div>
-     <div class="skill-category">
-        <h3>Software</h3>
-        <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/adobe-dreamweaver-svgrepo-com.svg" alt="html icona ">
-            <p>Adobe Dreamweaver</p>
-        </div>
-    </div>
 
-         <div class="skill-category">
-        <h3>Builder</h3>
-        <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/brand-elementor-svgrepo-com.svg" alt="html icona ">
-            <p>Elementor</p>
-        </div>
-        <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/woocommerce-logo-svgrepo-com.svg" alt="html icona ">
-            <p>WooCommerce</p>
+        <div class="skill-category">
+            <h3>Version Control</h3>
         </div>
 
     </div>
-     <div class="skill-category">
-        <h3>Version Control</h3>
-        <div class="competenza">
-            <img src="Immagini/immagini senza attribuzone/github-142-svgrepo-com.svg" alt="html icona ">
-            <p>GitHub</p>
-        </div>
-    </div>
-  
 
-
-   
 </div>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+<footer>
+
+    <div class="footer1">
+
+        <span class="contattami" id="contatti">
+            <h3>Contattami</h3>
+            <hr>
+            <p>Hai un progetto in mente? Contattami!</p>
+
+            <div class="p1">
+                <img src="Immagini/icone/email_icona.svg">
+                <p>email</p>
+            </div>
+
+            <div class="p1">
+                <img src="Immagini/icone/phone_icona.svg">
+                <p>telefono</p>
+            </div>
+        </span>
+
+        <span class="form">
+            <h3>Scrivimi</h3>
+            <hr>
+
+            <form>
+                <input type="text" placeholder="Il tuo nome">
+                <input type="email" placeholder="La tua email">
+                <textarea placeholder="Messaggio"></textarea>
+                <button>Invia</button>
+            </form>
+        </span>
+
+        <span class="social">
+            <h3>Social</h3>
+            <hr>
+            <a href="#">GitHub</a>
+        </span>
+
+    </div>
+
+    <div class="copy">
+        <p>©2026 Rossana Arnaboldi</p>
+    </div>
+
+</footer>
+
+<a href="#hero" class="back-to-top">↑</a>
+
+<!-- ========================= -->
+<!-- SCRIPT -->
+<!-- ========================= -->
+<script>
+
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+
+document.addEventListener("click", function (e) {
+    const menu = document.getElementById("menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    if (menu.classList.contains("active") &&
+        !menu.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+        menu.classList.remove("active");
+    }
+});
+
+const elements = document.querySelectorAll(".project, .skill-category");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, { threshold: 0.15 });
+
+elements.forEach(el => observer.observe(el));
+
+document.querySelector("form").addEventListener("submit", function(e){
+    alert("Messaggio inviato correttamente!");
+});
+
+const btn = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        btn.style.display = "flex";
+    } else {
+        btn.style.display = "none";
+    }
+});
+
+</script>
 
 </body>
 </html>
